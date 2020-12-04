@@ -1,13 +1,30 @@
-<% @books.each do |book| %>
-<div>
 
-  <p>タイトル：<%= book.title %></p>
-  <p>説明：<%= book.body %></p>
-  <p>ユーザーネーム：<%= book.user.name %></p>
-
-    <%= link_to book_path(book.id) do %>
-    詳細・show
-    <% end %>
-
-</div>
+<% @book.errors.full_messages.each do |message| %>
+ <div id="error_explanation">
+ <p2>This error prohibited this book from being saved:</p2>
+ <li><%= message %></li></div>
 <% end %>
+
+
+<h1>New book</h1>
+<%= form_with model: @book, local:true do |f| %>
+
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <p>Opinion</p>
+  <%= f.text_area :body %>
+  <%= f.submit 'Create Book' %>
+<% end %>
+
+<h1>Book detail</h1>
+<% @books.each do |book| %>
+<table>
+<tbody>
+  <%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %>
+  <%= link_to book_path(book.id) do %><p><%= book.title %></p>
+  <p><%= book.body %></p>
+  <% end %>
+</tbody>
+</table>
+<% end %>
+<%= paginate @books %>
