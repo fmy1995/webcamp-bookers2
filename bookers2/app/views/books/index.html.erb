@@ -1,10 +1,18 @@
 
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<body>
+<aside>
+<div class="user-info">
+<h1>User info</h1>
+</div>
+
+<div class="new-book">
 <% @book.errors.full_messages.each do |message| %>
  <div id="error_explanation">
- <p2>This error prohibited this book from being saved:</p2>
+ <p>This error prohibited this book from being saved:</p>
  <li><%= message %></li></div>
 <% end %>
-
 
 <h1>New book</h1>
 <%= form_with model: @book, local:true do |f| %>
@@ -13,18 +21,24 @@
   <%= f.text_field :title %>
   <p>Opinion</p>
   <%= f.text_area :body %>
-  <%= f.submit 'Create Book' %>
-<% end %>
 
+  <btn><%= f.submit 'Create Book' %></btn>
+<% end %>
+</div>
+</aside>
+
+<main>
 <h1>Book detail</h1>
 <% @books.each do |book| %>
 <table>
-<tbody>
-  <%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %>
-  <%= link_to book_path(book.id) do %><p><%= book.title %></p>
-  <p><%= book.body %></p>
-  <% end %>
-</tbody>
-</table>
+<sction class =detail>
+  <div class="item"><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></div>
+  <div class="item"><%= link_to book_path(book.id) do %><p><%= book.title %></p></div>  <% end %>
+  <div class="item"><p><%= book.body %></p></div>
+
 <% end %>
+</sction>
+</table>
+</main>
+</body>
 <%= paginate @books %>

@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+.user-info{
+  margin: 50px 100px
+}
+
+.new-book{
+　display: inline-block;
+  margin: 50px 100px;
+}
+
+.detail{
+display: flex;
+flex-direction: colum;
+}
+
+main{
+　display: inline-block;
+}
+
+.item{
+margin: 10px;
+padding: 10px;
+}
+
+header{
+background-color: teal;
+height: 80px;
+}
+
+

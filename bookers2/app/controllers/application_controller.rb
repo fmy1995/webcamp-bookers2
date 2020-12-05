@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
     books_path
   end
 
+
   protected
 
   def configure_permitted_parameters
