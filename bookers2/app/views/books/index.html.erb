@@ -1,17 +1,24 @@
 
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+<% if flash[:notice] %>
+  <p id ="notice"><%= flash[:notice] %></p>
+<% end %>
+
 <body>
 <aside>
+
 <div class="user-info">
 <h1>User info</h1>
-
-
-
+  <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+<p>name:<%= @user.name %></p>
+<P>introduction:<%= @user.introduction %></P>
+<% if @user.id == current_user.id %>
+  <p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
+<% end %>
 </div>
 
 <%= render 'books/list', books: @books %>
-
 </aside>
 
 <main>
@@ -28,4 +35,3 @@
 </table>
 </main>
 </body>
-<%= paginate @books %>

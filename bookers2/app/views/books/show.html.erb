@@ -5,20 +5,22 @@
 <aside>
 <div class="user-info">
 <h1>User info</h1>
+  <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+<p>name:<%= @user.name %></p>
+<P>introduction:<%= @user.introduction %></P>
+<% if @user.id == current_user.id %>
+  <p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
+<% end %>
 </div>
 
 <%= render 'books/list', books: @books %>
-
 </aside>
-
-
 
 <% if flash[:notice] %>
   <p id ="notice"><%= flash[:notice] %></p>
 <% end %>
 
 <h1>Book detail</h1>
-
 <section class="detail">
   <p class=item><%= @book.user.name %></p>
   <p class=item><%= @book.title %></p>
@@ -29,6 +31,5 @@
 
 <p class=item><%= link_to "Destory", book_path(@book), method: :delete %></p>
   <% end %>
-
 </section>
 </div>

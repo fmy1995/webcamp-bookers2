@@ -1,8 +1,11 @@
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 <div class="profile-container">
-  <h3 class="profile-name"><%= @user.name %></h3>
   <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+  <h3 class="profile-name">name : <%= @user.name %></h3>
+  
+  <h3 class="profile-introduction">introduction : <%= @user.introduction %></h3>
+  
   <% if @user.id == current_user.id %>
     <p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
   <% end %>
@@ -11,8 +14,8 @@
 <% @books.each do |book| %>
 <div>
   <%= link_to book_path(book.id) do %>
-    
   <% end %>
+
  <sction class =detail>
   <div class="item"><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></div>
   <div class="item"><%= link_to book_path(book.id) do %><p><%= book.title %></p></div>  <% end %>
