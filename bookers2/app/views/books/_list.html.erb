@@ -1,0 +1,20 @@
+
+
+<div class="new-book">
+<% @book.errors.full_messages.each do |message| %>
+ <div id="error_explanation">
+ <p>This error prohibited this book from being saved:</p>
+ <li><%= message %></li></div>
+<% end %>
+
+<h1>New book</h1>
+<%= form_with model: @book, local:true do |f| %>
+
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <p>Opinion</p>
+  <%= f.text_area :body %>
+
+  <p><%= f.submit 'Create Book' %></p>
+<% end %>
+</div>

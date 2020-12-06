@@ -1,3 +1,5 @@
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
 <div class="profile-container">
   <h3 class="profile-name"><%= @user.name %></h3>
   <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
@@ -11,10 +13,11 @@
   <%= link_to book_path(book.id) do %>
     
   <% end %>
-  <p>投稿ユーザー画像：<%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></p>
-  <p>ショップ名：<%= book.title %></p>
-  <p>説明：<%= book.body %></p>
-  <p>ユーザーネーム：<%= book.user.name %></p>
+ <sction class =detail>
+  <div class="item"><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></div>
+  <div class="item"><%= link_to book_path(book.id) do %><p><%= book.title %></p></div>  <% end %>
+  <div class="item"><p><%= book.body %></p></div>
+</sction>
 </div>
 <% end %>
 <%= paginate @books %>
