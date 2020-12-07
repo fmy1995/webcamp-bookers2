@@ -1,3 +1,5 @@
+<% if @user == current_user %>
+
 <h2>プロフィール編集</h2>
 
 <% @user.errors.full_messages.each do |message| %>
@@ -19,4 +21,6 @@
   <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
   
   <%= f.submit "変更を保存" %>
+<% end %>
+
 <% end %>

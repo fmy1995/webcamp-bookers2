@@ -1,5 +1,11 @@
-<h1>Editing Book</h1>
+<% if @user == @book.user %>
 
+<h1>Editing Book</h1>
+<% @book.errors.full_messages.each do |message| %>
+ <div id="error_explanation">
+ <p>This error prohibited this book from being saved:</p>
+ <li><%= message %></li></div>
+<% end %>
 
 <%= form_with model:@book, local: true do |f| %>
 
@@ -16,4 +22,10 @@
 <div class = "field">
   <%= f.submit 'Update Book' %>
 </div>
+<% end %>
+
+<%= link_to "Show", book_path(@book) %>
+|
+<%= link_to "Back", books_path %>
+
 <% end %>

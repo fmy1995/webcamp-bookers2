@@ -17,13 +17,19 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+
+
 .user-info{
-  margin: 50px 100px
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 200px;
 }
 
 .new-book{
 　display: inline-block;
-  margin: 50px 50px;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 200px;
 }
 
 .detail{
@@ -32,7 +38,7 @@ flex-direction: colum;
 }
 
 main{
-　display: inline-block;
+　display: flex;
 }
 
 .item{
@@ -41,7 +47,7 @@ padding: 10px;
 }
 
 header{
-background-color: teal;
+background-color: wheat;
 height: 80px;
 }
 

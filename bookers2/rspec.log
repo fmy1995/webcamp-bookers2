@@ -61,139 +61,139 @@ Userモデルのテスト
 [32m      Sign upボタンが表示される[0m
     新規登録成功のテスト
 [32m      正しく新規登録される[0m
-[31m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている (FAILED - 13)[0m
+[32m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている[0m
   ユーザログイン
     表示内容の確認
 [32m      URLが正しい[0m
 [32m      「Log in」と表示される[0m
-[31m      nameフォームが表示される (FAILED - 14)[0m
+[31m      nameフォームが表示される (FAILED - 13)[0m
 [32m      passwordフォームが表示される[0m
 [32m      Sign upボタンが表示される[0m
-[31m      emailフォームは表示されない (FAILED - 15)[0m
+[31m      emailフォームは表示されない (FAILED - 14)[0m
     ログイン成功のテスト
-[31m      ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている (FAILED - 16)[0m
+[31m      ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている (FAILED - 15)[0m
     ログイン失敗のテスト
-[31m      ログインに失敗し、ログイン画面にリダイレクトされる (FAILED - 17)[0m
+[31m      ログインに失敗し、ログイン画面にリダイレクトされる (FAILED - 16)[0m
   ヘッダーのテスト: ログインしている場合
     ヘッダーの表示を確認
-[31m      タイトルが表示される (FAILED - 18)[0m
-[31m      Homeリンクが表示される: 左上から1番目のリンクが「Home」である (FAILED - 19)[0m
-[31m      Usersリンクが表示される: 左上から2番目のリンクが「Users」である (FAILED - 20)[0m
-[31m      Booksリンクが表示される: 左上から3番目のリンクが「Books」である (FAILED - 21)[0m
-[31m      log outリンクが表示される: 左上から4番目のリンクが「logout」である (FAILED - 22)[0m
+[31m      タイトルが表示される (FAILED - 17)[0m
+[31m      Homeリンクが表示される: 左上から1番目のリンクが「Home」である (FAILED - 18)[0m
+[31m      Usersリンクが表示される: 左上から2番目のリンクが「Users」である (FAILED - 19)[0m
+[31m      Booksリンクが表示される: 左上から3番目のリンクが「Books」である (FAILED - 20)[0m
+[31m      log outリンクが表示される: 左上から4番目のリンクが「logout」である (FAILED - 21)[0m
   ユーザログアウトのテスト
     ログアウト機能のテスト
-[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 23)[0m
-[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 24)[0m
+[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 22)[0m
+[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 23)[0m
 
 [STEP2] ユーザログイン後のテスト
   ヘッダーのテスト: ログインしている場合
     リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。
-[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 25)[0m
-[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 26)[0m
-[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 27)[0m
+[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 24)[0m
+[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 25)[0m
+[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 26)[0m
   投稿一覧画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 28)[0m
-[31m      自分と他人の画像のリンク先が正しい (FAILED - 29)[0m
-[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 30)[0m
-[31m      自分の投稿と他人の投稿のオピニオンが表示される (FAILED - 31)[0m
+[31m      URLが正しい (FAILED - 27)[0m
+[31m      自分と他人の画像のリンク先が正しい (FAILED - 28)[0m
+[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 29)[0m
+[31m      自分の投稿と他人の投稿のオピニオンが表示される (FAILED - 30)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 32)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 33)[0m
-[31m      「New book」と表示される (FAILED - 34)[0m
-[31m      titleフォームが表示される (FAILED - 35)[0m
-[31m      titleフォームに値が入っていない (FAILED - 36)[0m
-[31m      opinionフォームが表示される (FAILED - 37)[0m
-[31m      opinionフォームに値が入っていない (FAILED - 38)[0m
-[31m      Create Bookボタンが表示される (FAILED - 39)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 31)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 32)[0m
+[31m      「New book」と表示される (FAILED - 33)[0m
+[31m      titleフォームが表示される (FAILED - 34)[0m
+[31m      titleフォームに値が入っていない (FAILED - 35)[0m
+[31m      opinionフォームが表示される (FAILED - 36)[0m
+[31m      opinionフォームに値が入っていない (FAILED - 37)[0m
+[31m      Create Bookボタンが表示される (FAILED - 38)[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 40)[0m
-[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 41)[0m
+[31m      自分の新しい投稿が正しく保存される (FAILED - 39)[0m
+[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 40)[0m
   自分の投稿詳細画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 42)[0m
-[31m      「Book detail」と表示される (FAILED - 43)[0m
-[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 44)[0m
-[31m      投稿のtitleが表示される (FAILED - 45)[0m
-[31m      投稿のopinionが表示される (FAILED - 46)[0m
-[31m      投稿の編集リンクが表示される (FAILED - 47)[0m
-[31m      投稿の削除リンクが表示される (FAILED - 48)[0m
+[31m      URLが正しい (FAILED - 41)[0m
+[31m      「Book detail」と表示される (FAILED - 42)[0m
+[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 43)[0m
+[31m      投稿のtitleが表示される (FAILED - 44)[0m
+[31m      投稿のopinionが表示される (FAILED - 45)[0m
+[31m      投稿の編集リンクが表示される (FAILED - 46)[0m
+[31m      投稿の削除リンクが表示される (FAILED - 47)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 49)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 50)[0m
-[31m      「New book」と表示される (FAILED - 51)[0m
-[31m      titleフォームが表示される (FAILED - 52)[0m
-[31m      titleフォームに値が入っていない (FAILED - 53)[0m
-[31m      opinionフォームが表示される (FAILED - 54)[0m
-[31m      opinionフォームに値が入っていない (FAILED - 55)[0m
-[31m      Create Bookボタンが表示される (FAILED - 56)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 48)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 49)[0m
+[31m      「New book」と表示される (FAILED - 50)[0m
+[31m      titleフォームが表示される (FAILED - 51)[0m
+[31m      titleフォームに値が入っていない (FAILED - 52)[0m
+[31m      opinionフォームが表示される (FAILED - 53)[0m
+[31m      opinionフォームに値が入っていない (FAILED - 54)[0m
+[31m      Create Bookボタンが表示される (FAILED - 55)[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 57)[0m
+[31m      自分の新しい投稿が正しく保存される (FAILED - 56)[0m
     編集リンクのテスト
-[31m      編集画面に遷移する (FAILED - 58)[0m
+[31m      編集画面に遷移する (FAILED - 57)[0m
     削除リンクのテスト
-[31m      正しく削除される (FAILED - 59)[0m
-[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 60)[0m
+[31m      正しく削除される (FAILED - 58)[0m
+[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 59)[0m
   自分の投稿編集画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 61)[0m
-[31m      「Editing Book」と表示される (FAILED - 62)[0m
-[31m      title編集フォームが表示される (FAILED - 63)[0m
-[31m      opinion編集フォームが表示される (FAILED - 64)[0m
-[31m      Update Bookボタンが表示される (FAILED - 65)[0m
-[31m      Showリンクが表示される (FAILED - 66)[0m
-[31m      Backリンクが表示される (FAILED - 67)[0m
+[31m      URLが正しい (FAILED - 60)[0m
+[31m      「Editing Book」と表示される (FAILED - 61)[0m
+[31m      title編集フォームが表示される (FAILED - 62)[0m
+[31m      opinion編集フォームが表示される (FAILED - 63)[0m
+[31m      Update Bookボタンが表示される (FAILED - 64)[0m
+[31m      Showリンクが表示される (FAILED - 65)[0m
+[31m      Backリンクが表示される (FAILED - 66)[0m
     編集成功のテスト
-[31m      titleが正しく更新される (FAILED - 68)[0m
-[31m      bodyが正しく更新される (FAILED - 69)[0m
-[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 70)[0m
+[31m      titleが正しく更新される (FAILED - 67)[0m
+[31m      bodyが正しく更新される (FAILED - 68)[0m
+[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 69)[0m
   ユーザ一覧画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 71)[0m
-[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 72)[0m
-[31m      自分と他人の名前がそれぞれ表示される (FAILED - 73)[0m
-[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 74)[0m
+[31m      URLが正しい (FAILED - 70)[0m
+[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 71)[0m
+[31m      自分と他人の名前がそれぞれ表示される (FAILED - 72)[0m
+[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 73)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 75)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 76)[0m
-[31m      「New book」と表示される (FAILED - 77)[0m
-[31m      titleフォームが表示される (FAILED - 78)[0m
-[31m      titleフォームに値が入っていない (FAILED - 79)[0m
-[31m      opinionフォームが表示される (FAILED - 80)[0m
-[31m      opinionフォームに値が入っていない (FAILED - 81)[0m
-[31m      Create Bookボタンが表示される (FAILED - 82)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 74)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 75)[0m
+[31m      「New book」と表示される (FAILED - 76)[0m
+[31m      titleフォームが表示される (FAILED - 77)[0m
+[31m      titleフォームに値が入っていない (FAILED - 78)[0m
+[31m      opinionフォームが表示される (FAILED - 79)[0m
+[31m      opinionフォームに値が入っていない (FAILED - 80)[0m
+[31m      Create Bookボタンが表示される (FAILED - 81)[0m
   自分のユーザ詳細画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 83)[0m
-[31m      投稿一覧のユーザ画像のリンク先が正しい (FAILED - 84)[0m
-[31m      投稿一覧に自分の投稿のtitleが表示され、リンクが正しい (FAILED - 85)[0m
-[31m      投稿一覧に自分の投稿のopinionが表示される (FAILED - 86)[0m
-[31m      他人の投稿は表示されない (FAILED - 87)[0m
+[31m      URLが正しい (FAILED - 82)[0m
+[31m      投稿一覧のユーザ画像のリンク先が正しい (FAILED - 83)[0m
+[31m      投稿一覧に自分の投稿のtitleが表示され、リンクが正しい (FAILED - 84)[0m
+[31m      投稿一覧に自分の投稿のopinionが表示される (FAILED - 85)[0m
+[31m      他人の投稿は表示されない (FAILED - 86)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 88)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 89)[0m
-[31m      「New book」と表示される (FAILED - 90)[0m
-[31m      titleフォームが表示される (FAILED - 91)[0m
-[31m      titleフォームに値が入っていない (FAILED - 92)[0m
-[31m      opinionフォームが表示される (FAILED - 93)[0m
-[31m      opinionフォームに値が入っていない (FAILED - 94)[0m
-[31m      Create Bookボタンが表示される (FAILED - 95)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 87)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 88)[0m
+[31m      「New book」と表示される (FAILED - 89)[0m
+[31m      titleフォームが表示される (FAILED - 90)[0m
+[31m      titleフォームに値が入っていない (FAILED - 91)[0m
+[31m      opinionフォームが表示される (FAILED - 92)[0m
+[31m      opinionフォームに値が入っていない (FAILED - 93)[0m
+[31m      Create Bookボタンが表示される (FAILED - 94)[0m
   自分のユーザ情報編集画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 96)[0m
-[31m      名前編集フォームに自分の名前が表示される (FAILED - 97)[0m
-[31m      画像編集フォームが表示される (FAILED - 98)[0m
-[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 99)[0m
-[31m      Update Userボタンが表示される (FAILED - 100)[0m
+[31m      URLが正しい (FAILED - 95)[0m
+[31m      名前編集フォームに自分の名前が表示される (FAILED - 96)[0m
+[31m      画像編集フォームが表示される (FAILED - 97)[0m
+[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 98)[0m
+[31m      Update Userボタンが表示される (FAILED - 99)[0m
     更新成功のテスト
-[31m      nameが正しく更新される (FAILED - 101)[0m
-[31m      introductionが正しく更新される (FAILED - 102)[0m
-[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 103)[0m
+[31m      nameが正しく更新される (FAILED - 100)[0m
+[31m      introductionが正しく更新される (FAILED - 101)[0m
+[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 102)[0m
 
 [STEP3] 仕上げのテスト
   サクセスメッセージのテスト
-[32m    ユーザ新規登録成功時[0m
+[31m    ユーザ新規登録成功時 (FAILED - 103)[0m
 [31m    ユーザログイン成功時 (FAILED - 104)[0m
 [31m    ユーザログアウト成功時 (FAILED - 105)[0m
 [31m    ユーザのプロフィール情報更新成功時 (FAILED - 106)[0m
@@ -266,20 +266,20 @@ Userモデルのテスト
     アバウト画面
 [31m      本のアイコンが表示される (FAILED - 145)[0m
     ヘッダー: ログインしていない場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 146)[0m
+[32m      Homeリンクのアイコンが表示される[0m
 [32m      Aboutリンクのアイコンが表示される[0m
 [32m      sign upリンクのアイコンが表示される[0m
 [32m      loginリンクのアイコンが表示される[0m
     ヘッダー: ログインしている場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 147)[0m
-[31m      Usersリンクのアイコンが表示される (FAILED - 148)[0m
-[31m      Booksリンクのアイコンが表示される (FAILED - 149)[0m
-[31m      log outリンクのアイコンが表示される (FAILED - 150)[0m
+[31m      Homeリンクのアイコンが表示される (FAILED - 146)[0m
+[31m      Usersリンクのアイコンが表示される (FAILED - 147)[0m
+[31m      Booksリンクのアイコンが表示される (FAILED - 148)[0m
+[31m      log outリンクのアイコンが表示される (FAILED - 149)[0m
     サイドバー
-[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 151)[0m
-[31m      ユーザ詳細画面でレンチアイコンが表示される (FAILED - 152)[0m
-[31m      投稿一覧画面でレンチアイコンが表示される (FAILED - 153)[0m
-[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 154)[0m
+[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 150)[0m
+[31m      ユーザ詳細画面でレンチアイコンが表示される (FAILED - 151)[0m
+[31m      投稿一覧画面でレンチアイコンが表示される (FAILED - 152)[0m
+[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 153)[0m
 
 Failures:
 
@@ -441,19 +441,7 @@ Failures:
       [31m[0m
       [36m# ./spec/system/01_before_login_spec.rb:94:in `block (4 levels) in <main>'[0m
 
-  13) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている
-      [31mFailure/Error: expect(current_path).to eq '/users/' + User.last.id.to_s[0m
-      [31m[0m
-      [31m  expected: "/users/1"[0m
-      [31m       got: "/books"[0m
-      [31m[0m
-      [31m  (compared using ==)[0m
-      [31m[0m
-      [31m[0m
-      [31m[0m
-      [36m# ./spec/system/01_before_login_spec.rb:144:in `block (4 levels) in <main>'[0m
-
-  14) [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 nameフォームが表示される
+  13) [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 nameフォームが表示される
       [31mFailure/Error: expect(page).to have_field 'user[name]'[0m
       [31m  expected to find field "user[name]" that is not disabled but there were no matches[0m
       [31m[0m
@@ -461,7 +449,7 @@ Failures:
       [31m[0m
       [36m# ./spec/system/01_before_login_spec.rb:164:in `block (4 levels) in <main>'[0m
 
-  15) [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 emailフォームは表示されない
+  14) [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 emailフォームは表示されない
       [31mFailure/Error: expect(page).not_to have_field 'user[email]'[0m
       [31m  expected not to find visible field "user[email]" that is not disabled, found 1 match: ""[0m
       [31m[0m
@@ -469,7 +457,7 @@ Failures:
       [31m[0m
       [36m# ./spec/system/01_before_login_spec.rb:173:in `block (4 levels) in <main>'[0m
 
-  16) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている
+  15) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -486,7 +474,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:179:in `block (4 levels) in <main>'[0m
 
-  17) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン失敗のテスト ログインに失敗し、ログイン画面にリダイレクトされる
+  16) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン失敗のテスト ログインに失敗し、ログイン画面にリダイレクトされる
       [31mFailure/Error: fill_in 'user[name]', with: ''[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -503,7 +491,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:191:in `block (4 levels) in <main>'[0m
 
-  18) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 タイトルが表示される
+  17) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 タイトルが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -520,7 +508,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:207:in `block (3 levels) in <main>'[0m
 
-  19) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から1番目のリンクが「Home」である
+  18) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から1番目のリンクが「Home」である
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -537,7 +525,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:207:in `block (3 levels) in <main>'[0m
 
-  20) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から2番目のリンクが「Users」である
+  19) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から2番目のリンクが「Users」である
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -554,7 +542,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:207:in `block (3 levels) in <main>'[0m
 
-  21) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から3番目のリンクが「Books」である
+  20) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から3番目のリンクが「Books」である
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -571,7 +559,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:207:in `block (3 levels) in <main>'[0m
 
-  22) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 log outリンクが表示される: 左上から4番目のリンクが「logout」である
+  21) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 log outリンクが表示される: 左上から4番目のリンクが「logout」である
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -588,7 +576,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:207:in `block (3 levels) in <main>'[0m
 
-  23) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
+  22) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -605,7 +593,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:240:in `block (3 levels) in <main>'[0m
 
-  24) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
+  23) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -622,7 +610,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/01_before_login_spec.rb:240:in `block (3 levels) in <main>'[0m
 
-  25) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
+  24) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -639,7 +627,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  26) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
+  25) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -656,7 +644,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  27) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
+  26) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -673,7 +661,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  28) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 URLが正しい
+  27) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 URLが正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -690,7 +678,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  29) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
+  28) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -707,7 +695,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  30) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
+  29) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -724,7 +712,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  31) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
+  30) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -741,7 +729,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  32) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  31) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -758,7 +746,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  33) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  32) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -775,7 +763,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  34) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
+  33) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -792,7 +780,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  35) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
+  34) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -809,7 +797,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  36) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  35) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -826,7 +814,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  37) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 opinionフォームが表示される
+  36) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 opinionフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -843,7 +831,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  38) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 opinionフォームに値が入っていない
+  37) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 opinionフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -860,7 +848,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  39) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  38) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -877,7 +865,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  40) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
+  39) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -894,7 +882,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  41) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
+  40) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -911,7 +899,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  42) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 URLが正しい
+  41) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 URLが正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -928,7 +916,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  43) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
+  42) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -945,7 +933,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  44) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
+  43) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -962,7 +950,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  45) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
+  44) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -979,7 +967,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  46) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される
+  45) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -996,7 +984,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  47) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
+  46) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1013,7 +1001,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  48) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
+  47) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1030,7 +1018,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  49) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  48) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1047,7 +1035,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  50) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  49) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1064,7 +1052,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  51) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
+  50) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1081,7 +1069,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  52) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
+  51) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1098,7 +1086,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  53) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  52) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1115,7 +1103,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  54) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 opinionフォームが表示される
+  53) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 opinionフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1132,7 +1120,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  55) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 opinionフォームに値が入っていない
+  54) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 opinionフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1149,7 +1137,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  56) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  55) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1166,7 +1154,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  57) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
+  56) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1183,7 +1171,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  58) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
+  57) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1200,7 +1188,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  59) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
+  58) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1217,7 +1205,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  60) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
+  59) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1234,7 +1222,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  61) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 URLが正しい
+  60) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 URLが正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1251,7 +1239,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  62) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
+  61) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1268,7 +1256,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  63) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
+  62) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1285,7 +1273,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  64) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 opinion編集フォームが表示される
+  63) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 opinion編集フォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1302,7 +1290,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  65) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される
+  64) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1319,7 +1307,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  66) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
+  65) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1336,7 +1324,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  67) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
+  66) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1353,7 +1341,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  68) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
+  67) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1370,7 +1358,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  69) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
+  68) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1387,7 +1375,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  70) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
+  69) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1404,7 +1392,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  71) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい
+  70) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1421,7 +1409,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  72) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
+  71) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1438,7 +1426,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  73) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される
+  72) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1455,7 +1443,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  74) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
+  73) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1472,7 +1460,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  75) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  74) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1489,7 +1477,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  76) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  75) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1506,7 +1494,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  77) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
+  76) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1523,7 +1511,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  78) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
+  77) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1540,7 +1528,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  79) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  78) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1557,7 +1545,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  80) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 opinionフォームが表示される
+  79) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 opinionフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1574,7 +1562,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  81) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 opinionフォームに値が入っていない
+  80) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 opinionフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1591,7 +1579,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  82) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  81) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1608,7 +1596,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  83) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい
+  82) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1625,7 +1613,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  84) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  83) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1642,7 +1630,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  85) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のtitleが表示され、リンクが正しい
+  84) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のtitleが表示され、リンクが正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1659,7 +1647,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  86) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のopinionが表示される
+  85) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のopinionが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1676,7 +1664,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  87) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 他人の投稿は表示されない
+  86) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 他人の投稿は表示されない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1693,7 +1681,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  88) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  87) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1710,7 +1698,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  89) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  88) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1727,7 +1715,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  90) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
+  89) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1744,7 +1732,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  91) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
+  90) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1761,7 +1749,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  92) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  91) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1778,7 +1766,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  93) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 opinionフォームが表示される
+  92) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 opinionフォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1795,7 +1783,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  94) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 opinionフォームに値が入っていない
+  93) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 opinionフォームに値が入っていない
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1812,7 +1800,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  95) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  94) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1829,7 +1817,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  96) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
+  95) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1846,7 +1834,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  97) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
+  96) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1863,7 +1851,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  98) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
+  97) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1880,7 +1868,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  99) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
+  98) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1897,7 +1885,24 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  100) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
+  99) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
+      [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
+      [31m[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find field "user[name]" that is not disabled[0m
+      [31m[0m
+      [31m[0m
+      [31m[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/finders.rb:53:in `find'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/actions.rb:91:in `fill_in'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/session.rb:768:in `block (2 levels) in <class:Session>'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
+      [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
+
+  100) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1914,7 +1919,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  101) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
+  101) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1931,7 +1936,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  102) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
+  102) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1948,22 +1953,13 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
 
-  103) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
-       [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
-       [31m[0m
-       [31mCapybara::ElementNotFound:[0m
-       [31m  Unable to find field "user[name]" that is not disabled[0m
+  103) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
+       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
+       [31m  expected to find text "successfully" in "Bookers\nHome Users Books logout\nUser info\nname:cail2gcoc\nintroduction:\nプロフィール編集\nNew book\nTitle\nOpinion\nTitle Opinion"[0m
        [31m[0m
        [31m[0m
        [31m[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/finders.rb:303:in `block in synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/base.rb:83:in `synchronize'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/finders.rb:292:in `synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/finders.rb:53:in `find'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/node/actions.rb:91:in `fill_in'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/session.rb:768:in `block (2 levels) in <class:Session>'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
-       [36m# ./spec/system/02_after_login_spec.rb:11:in `block (2 levels) in <main>'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:19:in `block (3 levels) in <main>'[0m
 
   104) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
@@ -2693,15 +2689,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:366:in `block (4 levels) in <main>'[0m
 
-  146) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される
-       [31mFailure/Error: is_expected.to have_selector '.fas.fa-home'[0m
-       [31m  expected to find css ".fas.fa-home" but there were no matches[0m
-       [31m[0m
-       [31m[0m
-       [31m[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:382:in `block (4 levels) in <main>'[0m
-
-  147) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される
+  146) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2718,7 +2706,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:400:in `block (4 levels) in <main>'[0m
 
-  148) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される
+  147) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2735,7 +2723,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:400:in `block (4 levels) in <main>'[0m
 
-  149) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される
+  148) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2752,7 +2740,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:400:in `block (4 levels) in <main>'[0m
 
-  150) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 log outリンクのアイコンが表示される
+  149) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 log outリンクのアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2769,7 +2757,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:400:in `block (4 levels) in <main>'[0m
 
-  151) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
+  150) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2786,7 +2774,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:424:in `block (4 levels) in <main>'[0m
 
-  152) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される
+  151) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2803,7 +2791,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:424:in `block (4 levels) in <main>'[0m
 
-  153) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される
+  152) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2820,7 +2808,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:424:in `block (4 levels) in <main>'[0m
 
-  154) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
+  153) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
        [31mFailure/Error: fill_in 'user[name]', with: user.name[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2837,8 +2825,8 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/capybara-3.34.0/lib/capybara/dsl.rb:58:in `block (2 levels) in <module:DSL>'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:424:in `block (4 levels) in <main>'[0m
 
-Finished in 8.75 seconds (files took 1.34 seconds to load)
-[31m197 examples, 154 failures[0m
+Finished in 9.15 seconds (files took 1.39 seconds to load)
+[31m197 examples, 153 failures[0m
 
 Failed examples:
 
@@ -2854,7 +2842,6 @@ Failed examples:
 [31mrspec ./spec/system/01_before_login_spec.rb:74[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Homeを押すと、トップ画面に遷移する[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:81[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:93[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 loginを押すと、ログイン画面に遷移する[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:142[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:163[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 nameフォームが表示される[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:172[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 emailフォームは表示されない[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:184[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている[0m
@@ -2945,6 +2932,7 @@ Failed examples:
 [31mrspec ./spec/system/02_after_login_spec.rb:385[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:388[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される[0m
 [31mrspec ./spec/system/02_after_login_spec.rb:391[0m [36m# [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:12[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:21[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:28[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:38[0m [36m# [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時[0m
@@ -2987,7 +2975,6 @@ Failed examples:
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:337[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-xs-〇を正しく使えている 投稿一覧画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:342[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-xs-〇を正しく使えている 投稿詳細画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:369[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:381[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしていない場合 Homeリンクのアイコンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:405[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:408[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:411[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される[0m

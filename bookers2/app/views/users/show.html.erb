@@ -1,26 +1,20 @@
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-<div class="profile-container">
-  <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
-  <h3 class="profile-name">name : <%= @user.name %></h3>
+<body>
   
-  <h3 class="profile-introduction">introduction : <%= @user.introduction %></h3>
-  
-  <% if @user.id == current_user.id %>
-    <p><%= link_to "プロフィール編集", edit_user_path(@user) %></p>
-  <% end %>
-</div>
-
-<% @books.each do |book| %>
 <div>
-  <%= link_to book_path(book.id) do %>
-  <% end %>
+<%= render 'books/list', book: @book, user: @user %>
+</div>  
 
- <sction class =detail>
-  <div class="item"><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></div>
-  <div class="item"><%= link_to book_path(book.id) do %><p><%= book.title %></p></div>  <% end %>
+<span>Title</span>
+<span>Opinion</span> 
+<% @books.each do |book| %>
+
+<sction class =detail>
+<table>
+  <div class="item"><%= link_to book_path(book.id) do %><p><%= book.title %></p> <% end %></div> 
   <div class="item"><p><%= book.body %></p></div>
+</table>
 </sction>
-</div>
+</body>
 <% end %>
-<%= paginate @books %>
