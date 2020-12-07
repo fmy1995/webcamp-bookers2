@@ -10,12 +10,12 @@
   </head>
 
     <header >
-    <h2>Bookers</h2>
+    <h2><%= link_to "Bookers", root_path %></h2>
 
     <% if user_signed_in? %>
 
       <span>
-        <a class="fas fa-home"><%= link_to 'Home', user_path(current_user.id) %></a>
+        <%= link_to 'Home', user_path(current_user.id), class: "fas fa-home" %>
       </span>
 
       <span>
@@ -32,18 +32,17 @@
 
     <% else %>
       <span>
-        <a class="fas fa-home"><%= link_to "Home", root_path %></a>
+        <%= link_to "Home", root_path, class: "fas fa-home" %>
       </span>
       </span>
-        <a class="fas fa-link"><%= link_to "About", homes_about_path %></a>
-      </span>
-      <span>
-        <a class="fas fa-sign-in-alt"><%= link_to "Login", new_user_session_path %></a>
+       <%= link_to "About", home_about_path, class: "fas fa-link" %>
       </span>
       <span>
-        <a class="fas fa-user-plus"><%= link_to "Signup", new_user_registration_path %></a>
-
-
+       <%= link_to "sign up", new_user_registration_path, class: "fas fa-user-plus" %>
+      </span>
+      <span>
+       <%= link_to "login", new_user_session_path, class: "fas fa-sign-in-alt" %>
+      </span>
     <% end %>
     </header>
 

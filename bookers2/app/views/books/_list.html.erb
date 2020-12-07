@@ -4,9 +4,9 @@
   <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
 <p>name:<%= user.name %></p>
 <P>introduction:<%= user.introduction %></P>
-<% if user.id == current_user.id %>
-  <p><i class="fas fa-user-cog"><%= link_to "プロフィール編集", edit_user_path(user) %></i></p>
-<% end %>
+
+<p><i class="fas fa-user-cog"><%= link_to "プロフィール編集", edit_user_path(@user) %></i></p>
+
 </div>
 
 <div class="new-book">
