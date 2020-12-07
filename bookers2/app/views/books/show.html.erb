@@ -1,11 +1,15 @@
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
-<div class="post-body">
-
+<div class="container">
+<div class="row">
+  <div class="col-md-3">
+<% if flash[:notice] %>
+  <p id ="notice"><%= flash[:notice] %></p>
+<% end %>
 <%= render 'books/list', book: @newbook, user: @user %>
-
+  </div>
+  
 <h1>Book detail</h1>
-<section class="detail">
+<div class="detail">
   <p class=item><%= @book.user.name %></p>
   <p class=item><%= @book.title %></p>
   <p class=item><%= @book.body %></p>
@@ -15,5 +19,8 @@
 
 <p class=item><%= link_to "Destory", book_path(@book), method: :delete %></p>
   <% end %>
-</section>
+</div>
+
+
+</div>
 </div>
