@@ -11,32 +11,32 @@
   </head>
 
     <header >
-    <div class="container">
+    <div class="container-application">
     <h2><%= link_to "Bookers", root_path %></h2>
-
-    <% if user_signed_in? %>
-
+    
+    <div class="header-bar"> 
+  　　　<% if user_signed_in? %>
       <span>
         <%= link_to 'Home', user_path(current_user.id), class: "fas fa-home" %>
       </span>
 
       <span>
-        <%= link_to "Users", users_path, class: "fas fa-users" %></a>
+        <%= link_to "Users", users_path, class: "fas fa-users" %>
       </span>
 
       <span>
-        <%= link_to "Books", books_path, class: "fas fa-book-open" %></a>
+        <%= link_to "Books", books_path, class: "fas fa-book-open" %>
       </span>
 
       <span>
-        <%= link_to "logout", destroy_user_session_path, method: :delete, class: "fas fa-sign-out-alt" %></a>
+        <%= link_to "logout", destroy_user_session_path, method: :delete, class: "fas fa-sign-out-alt" %>
       </span>
 
     <% else %>
       <span>
         <%= link_to "Home", root_path, class: "fas fa-home" %>
       </span>
-      </span>
+      <span>
        <%= link_to "About", home_about_path, class: "fas fa-link" %>
       </span>
       <span>
@@ -45,8 +45,10 @@
       <span>
        <%= link_to "login", new_user_session_path, class: "fas fa-sign-in-alt" %>
       </span>
-      </div>
     <% end %>
+    </div>
+    
+    </div>
     </header>
 
     <main class="mb-auto">

@@ -9,17 +9,20 @@
 
 <%= form_with model:@user, local:true do |f| %>
 
-  <label for="inputName">Name</label>
+  <p for="inputName">Name</p>
   <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"Name"%>
 
-  <label for="inputName">Introduction</label>
+  <p for="inputName">Introduction</p>
   <%= f.text_field :introduction, autofocus: true, id:"inputIntroduction", placeholder:"Introduction"%>
 
+
+  <p for="inputImage">ProfileImage</p>
   <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg"%>
-  <label for="inputImage">ProfileImage</label>
   <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
 
-  <%= f.submit "Update User" %>
+   <div class="actions">
+  <%= f.submit "Update User",class: 'btn btn-success' %>
+  </div>
 <% end %>
 
 <% end %>

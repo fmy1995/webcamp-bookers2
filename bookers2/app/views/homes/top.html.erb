@@ -7,15 +7,15 @@
 <div class="col-md-6 mx-auto mt-5">
   <h1>welcome to
     <strong<i class="fas fa-book"></i>Bookers</strong>  !!</span></h1>
-  <p>In  <span class="glyphicon glyphicon-book"></span><strong><i class="fas fa-book"></i>Bookers,</strong>, </p>
+  <p>In  <span class="glyphicon glyphicon-book"></span><strong><i class="fas fa-book"></i>Bookers</strong>, </p>
   <p>you can share and exchange your opinions ,inpressions , and emotions</p>
 
   <p>about various books!</p>
 
   <div class="row">
 
-  <%= link_to "Log in", new_user_session_path, class: 'nav-link text-dark' %>
-  <%= link_to "Sign Up", new_user_registration_path, class: 'nav-link text-dark' %>
+  <button class="btn btn-outline-primary" type="button"><%= link_to "Log in", new_user_session_path, class: 'nav-link text-dark' %></button>
+  <button class="btn btn-outline-success" type="button"><%= link_to "Sign Up", new_user_registration_path, class: 'nav-link text-dark' %></button>
 
   </div>
 </div>

@@ -2,10 +2,11 @@
 <div class="user-info">
 <h1>User info</h1>
   <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
-<p>name:<%= user.name %></p>
-<P>introduction:<%= user.introduction %></P>
+<p class="user-info">name:<%= user.name %></p>
+<P class="user-info">introduction:<%= user.introduction %></P>
 
-<p><i class="fas fa-user-cog"><%= link_to "プロフィール編集", edit_user_path(@user) %></i></p>
+<p class="user-info">
+  <button class="btn btn-outline-secondary" type="button"><%= link_to "profile edit", edit_user_path(@user), class: "fas fa-user-cog" %></button> </p>
 
 </div>
 
@@ -27,7 +28,7 @@
   <%= f.text_area :body %>
 </div>
 <div class = "field">
-  <%= f.submit 'Create Book' %>
+  <%= f.submit 'Create Book', class: 'btn btn-primary' %>
 </div>
 <% end %>
 </div>

@@ -11,14 +11,21 @@
 
 <div class="col-md-8 offset-md-1">
 <h1>Book detail</h1>
-<% @books.each do |book| %>
+
 <table>
-<sction class =detail>
-  <div class="item"><%= link_to user_path(book.user) do %><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %></div>
-  <div class="item"><%= link_to book_path(book.id) do %><p><%= book.title %></p></div>  <% end %>
-  <div class="item"><p><%= book.body %></p></div>
+<tr>
+<th>User image</th>
+<th>TItle</th>
+<th>Opinion</th>
+</tr>
+
+<% @books.each do |book| %>
+<tr>
+  <th><p class="item"><%= link_to user_path(book.user) do %><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %></p></th>
+  <th><p class="item"><%= link_to book_path(book.id) do %><%= book.title %><% end %></p></th>
+  <th><p class="item"><%= book.body %></p></th>
+</tr>
 <% end %>
-</sction>
 </table>
 </div>
 
