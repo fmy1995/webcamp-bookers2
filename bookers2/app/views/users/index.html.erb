@@ -5,13 +5,13 @@
 </div>
 <ul class="users">
      <span>image</span>
-    <span>name</span> 
+    <span>name</span>
 
   <% @users.each do |user| %>
 
     <table>
     <sction class="detail">
-    <div class="item"><%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></div>
+    <div class="item"><%= link_to user_path(user) do %><%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %></div>
     <div class="item"><%= link_to(user.name, "/users/#{user.id}") %></div>
     <div class="item"><%= link_to "Show", user_path(user) %>
     </sction></table>
