@@ -4,12 +4,14 @@
     <title>Bookers2</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="https://kit.fontawesome.com/*******.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
     <header >
+    <div class="container">
     <h2><%= link_to "Bookers", root_path %></h2>
 
     <% if user_signed_in? %>
@@ -43,12 +45,15 @@
       <span>
        <%= link_to "login", new_user_session_path, class: "fas fa-sign-in-alt" %>
       </span>
+      </div>
     <% end %>
     </header>
 
-
-
-
-
+    <main class="mb-auto">
     <%= yield %>
+    </main>
+
+ <footer>
+ <p>CopyRight Infratop.inc</p>
+</footer>
 </html>

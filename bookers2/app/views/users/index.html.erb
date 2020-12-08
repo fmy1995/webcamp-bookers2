@@ -3,10 +3,14 @@
  <div class="col-md-3">
    <%= render 'books/list', book: @book, user: @user %>
 </div>
-<ul class="users">
-     <span>image</span>
-    <span>name</span>
 
+<div class="col-md-8 offset-md-1">
+<ul class="users">
+<thead>
+    <th>image</th>
+    <th>name</th>
+    <th colspan = "3" ></th>
+</thead>
   <% @users.each do |user| %>
 
     <table>
@@ -17,5 +21,6 @@
     </sction></table>
   <% end %>
 </ul>
+</div>
 </div>
 </div>
