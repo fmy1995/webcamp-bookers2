@@ -17,7 +17,14 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+h1{
+margin-bottom: 20px;
+}
 
+
+main{
+display:inline-;
+}
 
 .user-info{
   width: 200px;
@@ -31,6 +38,11 @@
 
 .container{
 margin: 30px auto;
+padding-left: 20px;
+}
+
+button{
+margin: 10px auto;
 }
 
 .item{
@@ -43,33 +55,21 @@ border-bottom: 2px solid #dee2e6
 }
 
 header{
-background-color: wheat;
+background-color: #ddd;
+display: flex;
+flex-wrap: wrap;
 }
 
 .header-bar{
-margin-left: auto;
-margin-right: 0px;
+display: flex;
+justify-content: flex-end;
+padding-right: 200px;
 }
 
 span{
 margin-left: 30px;
 }
 
-.image1 {
-  background-image: url(image1.jpg);
-}
-.image2 {
-  background-image: url(image2.jpg);
-}
-.image3 {
-  background-image: url(image3.jpg);
-}
-.image4 {
-  background-image: url(image4.jpg);
-}
-.image5 {
-  background-image: url(image5.jpg);
-}
 
 #container{
   height: 500px;
