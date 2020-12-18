@@ -8,6 +8,7 @@ class BooksController < ApplicationController
     @books = Book.all
     @book = Book.new
     @user = current_user
+    @book_comments =BookComment.all
   end
 
   def create

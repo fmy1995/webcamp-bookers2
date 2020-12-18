@@ -17,9 +17,10 @@
   <h1>User Books</h1>
  <table>
  <tr>
+  <th>User img</th>
   <th>Title</th>
   <th>Opinion</th>
-  <th></th>
+  <th>Comments</th>
  </tr>
 
 <% @books.each do |book| %>
@@ -27,6 +28,7 @@
   <th><p class="item"><%= link_to user_path(@user) do %><%= attachment_image_tag @user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %></p></th>
   <th><p class="item"><%= link_to book_path(book.id) do %><%= book.title %><% end %></p></th>
   <th><p class="item"><%= book.body %></p></th>
+  <th><p class="item"><%= book.book_comments.count %></p></th>
 </tr>
 <% end %>
 

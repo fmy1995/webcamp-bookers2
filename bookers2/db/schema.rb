@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_17_121910) do
+ActiveRecord::Schema.define(version: 2020_12_18_055244) do
 
   create_table "book_comments", force: :cascade do |t|
     t.text "comment"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 2020_12_17_121910) do
     t.string "image_id"
     t.text "body"
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "book_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

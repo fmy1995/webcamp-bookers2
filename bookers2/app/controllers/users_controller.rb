@@ -10,6 +10,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @books = @user.books.page(params[:page]).reverse_order
     @book = Book.new
+    @book_comments =BookComment.all
   end
 
   def edit
