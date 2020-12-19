@@ -1,7 +1,7 @@
 <main>
 <div class="container">
 <div class="row">
-    
+
  <div class="col-md-3">
    <%= render 'books/list', book: @book, user: @user %>
 </div>
@@ -13,15 +13,41 @@
  <th>Image</th>
  <th>Name</th>
  <th></th>
+ <th></th>
+ <th></th>
+ <th></th>
  </tr>
    <% @users.each do |user| %>
- <tr> 
+ <tr>
     <th><p class="item"><%= link_to user_path(user) do %><%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %></p></th>
     <th><p class="item"><%= link_to(user.name, "/users/#{user.id}") %></p></th>
     <th><p class="item"><%= link_to "Show", user_path(user) %></p></th>
+ <th><p class="item">
+  <%= link_to "フォロー(#{user.followeds.count})", followeds_user_path(user), class: "nav-link" %>
+  <%= link_to "フォロワー(#{user.followers.count})", followers_user_path(user), class: "nav-link" %>
+ </p></th>
+
+<th><p class="item">
+<% if user != current_user%>
+  <div id="follow_form">
+ <% if current_user.followed?(user) %>
+<%= form_with(model: current_user.followed_relationships.find_by(followed_id: user.id),method: :delete) do |f| %>
+  <%= f.hidden_field :followed_id %>
+  <%= f.submit "フォローをはずす", class: "btn btn-outline-secondary" %>
+<% end %>
+    <% else %>
+<%= form_with(model: current_user.followed_relationships.build) do |f| %>
+  <%= f.hidden_field :followed_id, value: user.id %>
+  <%= f.submit "フォローする", class: "btn btn-outline-secondary" %>
+<% end %>
+    <% end %>
+  </div>
+<% end %>
+</p></th>
+
  </tr>
   <% end %>
-</table> 
+</table>
 </div>
 
 </div>

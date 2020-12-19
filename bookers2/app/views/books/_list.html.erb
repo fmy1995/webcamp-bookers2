@@ -4,10 +4,27 @@
   <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
 <p class="user-info">name:<%= user.name %></p>
 <P class="user-info">introduction:<%= user.introduction %></P>
-
+<P class="user-info">投稿数:<%= @user.books.count %></P>
 <p class="user-info">
-  <button class="btn btn-outline-secondary" type="button"><%= link_to "profile edit", edit_user_path(@user), class: "fas fa-user-cog" %></button> </p>
+<button class="btn btn-outline-secondary" type="button"><%= link_to "profile edit", edit_user_path(@user), class: "fas fa-user-cog" %></button> </p>
 
+<div id="follow_form">
+<%= link_to "フォロー(#{user.followeds.count})", followeds_user_path(user), class: "nav-link" %>
+<%= link_to "フォロワー(#{user.followers.count})", followers_user_path(user), class: "nav-link" %>
+<% if user != current_user%>
+    <% if current_user.followed?(user) %>
+    <%= form_with(model: current_user.followed_relationships.find_by(followed_id: user.id),method: :delete) do |f| %>
+    <%= f.hidden_field :followed_id %>
+    <%= f.submit "フォローをはずす", class: "btn btn-outline-secondary" %>
+    <% end %>
+ <% else %>
+    <%= form_with(model: current_user.followed_relationships.build) do |f| %>
+    <%= f.hidden_field :followed_id, value: user.id %>
+    <%= f.submit "フォローする", class: "btn btn-outline-secondary" %>
+    <% end %>
+ <% end %>
+<% end %>
+  </div>
 </div>
 
 <div class="new-book">

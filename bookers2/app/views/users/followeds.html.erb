@@ -1,0 +1,9 @@
+<div class="container">
+<h3>フォロー一覧<h3>
+
+<% @user.followeds.each do |user| %>
+<p class="item"><%= link_to user_path(user) do %><%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %>
+<%= link_to user.name, user %></p>
+<% end %>
+
+</div>
