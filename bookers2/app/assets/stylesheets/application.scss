@@ -57,18 +57,24 @@ padding-left: 3px;
 
 header{
 background-color: #ddd;
-display: flex;
-flex-wrap: wrap;
+}
+
+.container-application{
 }
 
 .header-bar{
-display: flex;
-justify-content: flex-end;
-padding-right: 200px;
+ display: flex;
+flex-wrap: wrap;
+font-size: 16px;
 }
 
 span{
-margin-left: 30px;
+margin-right: 20px;
+}
+
+.search-form{
+margin-left: 50px;
+padding-bottom: 3px;
 }
 
 
@@ -97,3 +103,6 @@ footer {
   background-color: #fff;
 }
 
+li{
+  font-size: 24px;
+}

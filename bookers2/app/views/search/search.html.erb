@@ -1,0 +1,19 @@
+
+<div class="container">
+<h1>検索結果</h1>
+
+<% if @model == 'user' %>
+   <h3>【Usersの検索結果】検索ワード：<%= @content %></h3>
+    <% @datas.each do |data| %>
+    <li><%= link_to data.name ,user_path(data) %></li>
+    <% end %>
+
+<% else @model == 'books' %>
+
+  <h3>【Bookの検索結果】検索ワード：<%= @content %></h3>
+
+    <% @datas.each do |data| %>
+     <li><%= link_to data.title ,book_path(data) %></li>
+    <% end %>
+<% end %>
+</div>
