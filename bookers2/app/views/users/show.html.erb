@@ -30,16 +30,8 @@
   <th><p class="item"><%= book.body %></p></th>
   <th><p class="item"><%= book.book_comments.count %></p></th>
   <th>
-  <% if book.favorited_by?(current_user) %>
-      <%= link_to book_favorites_path(book), method: :delete do %>
-        ♥<%= book.favorites.count %>
-      <% end %>
-    <% else %>
-      <%= link_to book_favorites_path(book), method: :post do %>
-        ♡<%= book.favorites.count %>
-      <% end %>
-  <% end %>
-</th>
+  <%= render 'favorites/favorite-btn', book: book %>
+  </th>
 
 
 </tr>

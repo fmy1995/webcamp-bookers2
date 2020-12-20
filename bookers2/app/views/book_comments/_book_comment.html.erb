@@ -1,0 +1,21 @@
+<div class ="comments">
+<%= book.book_comments.count %> comments</p>
+
+<% book.book_comments.each do |book_comment| %>
+<table>
+<tr>
+  <th><%= attachment_image_tag book_comment.user, :profile_image, :fill, 40, 40, fallback: "no_image.jpg" %></th>
+  <th><%= book_comment.user.name %></th>
+  <th></th>
+  <th><%= book_comment.comment %></th>
+  <th></th>
+  <th></th>
+<% if book_comment.user_id == current_user.id %>
+  <th></th>
+  <th><button type="button" class="btn btn-outline-danger"><%= link_to "Destroy", book_book_comment_path(book_comment), method: :delete %></button></th>
+<% end %>
+<% end %>
+</tr>
+</table>
+</div>
+
