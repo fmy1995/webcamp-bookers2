@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/search' => 'search#search'
 
-  resources :users, only: [:show, :edit, :index, :update] do
+resources :users, only: [:show, :edit, :index, :update] do
       member do
         get :followeds, :followers
       end

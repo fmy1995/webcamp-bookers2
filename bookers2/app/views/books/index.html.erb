@@ -11,7 +11,6 @@
 
 <div class="col-md-8 offset-md-1">
 <h1>Book detail</h1>
-
 <table>
 <tr>
 <th>User image</th>
@@ -22,17 +21,17 @@
 </tr>
 
 <% @books.each do |book| %>
-<tr>
-  <th><p class="item"><%= link_to user_path(book.user) do %><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %></p></th>
-  <th><p class="item"><%= link_to book_path(book.id) do %><%= book.title %><% end %></p></th>
-  <th><p class="item"><%= book.body %></p></th>
-  <th><p class="item"><%= book.book_comments.count %></p></th>
-
-   <th><p class="item">
-   <%= render 'favorites/favorite-btn', book: book %>
-   </p></th>
+<tr id="book_<%= book.id %>">
+  <td><p class="item"><%= link_to user_path(book.user) do %><%= attachment_image_tag book.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %><% end %></p></td>
+  <td><p class="item"><%= link_to book_path(book.id) do %><%= book.title %><% end %></p></td>
+  <td><p class="item"><%= book.body %></p></td>
+  <td><p class="item"><%= book.book_comments.count %></p></td>
+  
+  <td class="favorite-btn"><%= render "favorites/favorite-btn", book: book %></td>
+  
+ <% end %> 
 </tr>
-<% end %>
+
 </table>
 </div>
 
