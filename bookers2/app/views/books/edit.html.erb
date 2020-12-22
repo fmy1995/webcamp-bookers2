@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Editing Book</h1>
 
 <% @book.errors.full_messages.each do |message| %>
@@ -7,8 +8,6 @@
 <% end %>
 
 <%= form_with model:@book, local: true do |f| %>
-
-<div class="container">
  <div class = "field">
   <p>Title</p>
   <%= f.text_field :title %>
