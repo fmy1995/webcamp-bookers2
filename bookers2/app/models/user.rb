@@ -11,24 +11,42 @@ class User < ApplicationRecord
   attachment :profile_image
   validates :name, presence: true ,length: {in:2..20}, uniqueness: true
   validates :introduction ,length: {maximum: 50}
+  validates :postcode, presence: true
+  validates :prefecture_code, presence: true
+  validates :city, presence: true
+  validates :street, presence: true
+
 
   has_many :follower_relationships,foreign_key: "followed_id", class_name: "Relationship", dependent: :destroy
   has_many :followers, through: :follower_relationships
   has_many :followed_relationships,foreign_key: "follower_id", class_name: "Relationship",  dependent: :destroy
   has_many :followeds, through: :followed_relationships
 
-  def followed?(other_user)
-    self.followeds.include?(other_user)
+include JpPrefecture
+jp_prefecture :prefecture_code
+
+
+  
+  def prefecture_name
+    JpPrefecture::Prefecture.find(code: prefecture_code).try(:name)
+  end
+  
+  def prefecture_name=(prefecture_name)
+    self.prefecture_code = JpPrefecture::Prefecture.find(name: prefecture_name).code
   end
 
-  #ユーザーをフォローする
-  def follow(other_user)
-    self.followed_relationships.create(followed_id: other_user.id)
-  end
+def followed?(other_user)
+  self.followeds.include?(other_user)
+end
 
-  #ユーザーのフォローを解除する
-  def unfollow(other_user)
-    self.followed_relationships.find_by(followed_id: other_user.id).destroy
-  end
+ #ユーザーをフォローする
+def follow(other_user)
+   self.followed_relationships.create(followed_id: other_user.id)
+end
+
+ #ユーザーのフォローを解除する
+def unfollow(other_user)
+ self.followed_relationships.find_by(followed_id: other_user.id).destroy
+end
 
 end

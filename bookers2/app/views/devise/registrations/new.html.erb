@@ -8,24 +8,44 @@
   <%= f.label :name %><br />
   <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
 </div>
-
+<div class="field">
+  <%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+</div>
+  
+ <div class="field">
+  <%= f.label :postcode %><br />
+  <%= f.text_field :postcode %>
+ </div>
+ <div class="field">
+  <%= f.label :prefecture_code %><br />
+  <%= f.collection_select :prefecture_code, JpPrefecture::Prefecture.all, :name, :name %>
+ </div>
+ <div class="field">
+  <%= f.label :address_city %><br />
+  <%= f.text_field :address_city %>
+ </div>
+ <div class="field">
+  <%= f.label :address_street %><br />
+  <%= f.text_field :address_street %>
+ </div>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <%= f.label :address_building%><br />
+  <%= f.text_field :address_building %>
+ </div>
+ 
+ <div class="field">
+  <%= f.label :password %>
+  <% if @minimum_password_length %>
+  <em>(<%= @minimum_password_length %> characters minimum)</em>
+  <% end %><br />
+  <%= f.password_field :password, autocomplete: "new-password" %>
+ </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+ <div class="field">
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+ </div>
 
   <div class="actions">
     <%= f.submit "Sign up", class: 'btn btn-primary' %>

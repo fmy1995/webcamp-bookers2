@@ -13,17 +13,25 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-//= require jquery
+
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+
 //= require_tree .
 
 
-
-$(document).ready(function () {
-  $('.jquery').on('click', function(){
-    $(this).css('color','red');
+$(function () {
+  $(document).on('turbolinks:load', () => {
+    $('#user_postcode').jpostal({
+      postcode: [
+        '#user_postal_code'
+      ],
+      address: {
+      '#user_prefecture_code': '%3',
+      '#user_address_city': '%4',
+      '#user_address_street': '%5%6%7',
+      }
+    });
   });
 });
-
