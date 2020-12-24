@@ -1,4 +1,16 @@
 class User < ApplicationRecord
+include JpPrefecture
+jp_prefecture :prefecture_code
+
+def prefecture_name
+  JpPrefecture::Prefecture.find(code: prefecture_code).try(:name)
+end
+
+def prefecture_name=(prefecture_name)
+  self.prefecture_code = JpPrefecture::Prefecture.find(name: prefecture_name).code
+end 
+    
+    
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -12,9 +24,8 @@ class User < ApplicationRecord
   validates :name, presence: true ,length: {in:2..20}, uniqueness: true
   validates :introduction ,length: {maximum: 50}
   validates :postcode, presence: true
-  validates :prefecture_code, presence: true
-  validates :city, presence: true
-  validates :street, presence: true
+  validates :address_city, presence: true
+  validates :address_street, presence: true
 
 
   has_many :follower_relationships,foreign_key: "followed_id", class_name: "Relationship", dependent: :destroy
@@ -22,18 +33,7 @@ class User < ApplicationRecord
   has_many :followed_relationships,foreign_key: "follower_id", class_name: "Relationship",  dependent: :destroy
   has_many :followeds, through: :followed_relationships
 
-include JpPrefecture
-jp_prefecture :prefecture_code
 
-
-  
-  def prefecture_name
-    JpPrefecture::Prefecture.find(code: prefecture_code).try(:name)
-  end
-  
-  def prefecture_name=(prefecture_name)
-    self.prefecture_code = JpPrefecture::Prefecture.find(name: prefecture_name).code
-  end
 
 def followed?(other_user)
   self.followeds.include?(other_user)
