@@ -1,4 +1,4 @@
-
+<div class="container">
 <h2>プロフィール編集</h2>
 
 <% @user.errors.full_messages.each do |message| %>
@@ -20,8 +20,18 @@
   <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg"%>
   <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
 
+  <p for="inputImage">Address</p>
+<%= f.text_field :postcode, autofocus: true, id:"input", placeholder:"pustcode"%>
+<%= f.collection_select :prefecture_code, JpPrefecture::Prefecture.all, :name, :name %>
+<%= f.text_field :address_city, autofocus: true, id:"input", placeholder:"Name"%>
+
+<%= f.text_field :address_street, autofocus: true, id:"input", placeholder:"street"%>
+
+<%= f.text_field :address_buildin, autofocus: true, id:"input", placeholder:"building"%>
+
    <div class="actions">
   <%= f.submit "Update User",class: 'btn btn-success' %>
   </div>
 <% end %>
 
+</div>
